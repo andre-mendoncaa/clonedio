@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Login }from './pages/login';
 import { Feed } from './pages/feed';
-
+import { Cadastro } from './pages/cadastro';
+ 
 function App() {
   return (
     <Router>
@@ -11,6 +12,7 @@ function App() {
         <Route path="/login" element={<Login />} /> {/* Rota para a página de Login */}
         <Route path="/home" element={<Home />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/cadastro" element={<Cadastro />} />
      </Routes >
     </Router>
   );
